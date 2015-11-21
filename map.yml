@@ -1,0 +1,776 @@
+info:
+  title: 'WahizCTW'
+  world: 'Wahiz'
+  version: 1.0
+  type: ctw
+  creators:
+  - MapDev
+  - Jiveh
+  - Tazz
+  contributers:
+  - Administrafer
+  - Fouled
+  spawn: 8.5,74,-23.5,-180,2
+  time: 1200
+ 
+remove-drops:
+- leather helmet
+- leather chestplate
+- leather leggings
+- leather boots
+- golden apple
+- stone sword
+- stone axe
+- bow
+- iron pickaxe
+ 
+repair-drops:
+- stone sword
+- bow
+- iron pickaxe
+- stone axe
+ 
+regions:
+  blue-spawn:
+    type: cuboid
+    min: 103,0,-78
+    max: 115,6,-72
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      fall_damage:
+        who: 'blue'
+  blue-spawn-1:
+    type: cuboid
+    min: 116,0,-70
+    max: 129,6,-80
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      fall_damage:
+        who: 'blue'
+  blue-drop:
+    type: cuboid
+    min: 126,7,-77
+    max: 122,39,-73
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      fall_damage:
+        who: 'blue'
+  red-spawn:
+    type: cuboid
+    min: -87,0,-72
+    max: -99,6,-78
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      fall_damage:
+        who: 'red'
+  red-spawn-1:
+    type: cuboid
+    min: -100,0,-80
+    max: -113,6,-70
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not edit the spawn area.'
+      fall_damage:
+        who: 'red'
+  red-drop:
+     type: cuboid
+     min: -110,7,-73
+     max: -106,39,-77
+     flags:
+       build:
+         who: '*'
+         message: '&cYou may not edit the spawn area.'
+  wool-chest-1:
+    type: point
+    point: -123,16,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  wool-chest-2:
+    type: point
+    point: -123,16,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  wool-chest-3:
+    type: point
+    point: 139,16,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  wool-chest-4:
+    type: point
+    point: 139,16,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  wool-tower-purple:
+    type: cuboid
+    min: 125,0,-48
+    max: 140,30,-58
+    flags:
+      enter:
+        who: 'blue'
+        message: '&cYou may not enter in your own wool room.'
+      build:
+        who: 'blue'
+        message: '&cYou may not build in your own wool room.'
+  wool-tower-pink:
+    type: cuboid
+    min: 125,0,-92
+    max: 140,30,-102
+    flags:
+      enter:
+        who: 'blue'
+        message: '&cYou may not enter in your own wool room.'
+      build:
+        who: 'blue'
+        message: '&cYou may not build in your own wool room.'
+  wool-tower-orange:
+    type: cuboid
+    min: -109,0,-102
+    max: -124,30,-92
+    flags:
+      enter:
+        who: 'red'
+        message: '&cYou may not enter in your own wool room.'
+      build:
+        who: 'red'
+        message: '&cYou may not build in your own wool room.'
+  wool-tower-yellow:
+    type: cuboid
+    min: -109,0,-58
+    max: -124,30,-48
+    flags:
+      enter:
+        who: 'red'
+        message: '&cYou may not enter in your own wool room.'
+      build:
+        who: 'red'
+        message: '&cYou may not build in your own wool room.'
+  wool-place-1:
+    type: point
+    point: -112,3,-74
+    flags:
+      build:
+        allow: 'true'
+        priority: 5
+        who: '*'
+  wool-place-2:
+    type: point
+    point: -112,3,-76
+    flags:
+      build:
+        allow: 'true'
+        priority: 5
+        who: '*'
+  wool-place-3:
+    type: point
+    point: 128,3,-76
+    flags:
+      build:
+        allow: 'true'
+        priority: 5
+        who: '*'
+  wool-place-4:
+    type: point
+    point: 128,3,-74
+    flags:
+      build:
+        allow: 'true'
+        priority: 5
+        who: '*'
+  special-chest-1:
+    type: point
+    point: 139,20,-101
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-2:
+    type: point
+    point: 139,20,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-3:
+    type: point
+    point: 139,20,-93
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-4:
+    type: point
+    point: 139,20,-57
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-5:
+    type: point
+    point: 139,20,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-6:
+    type: point
+    point: 139,20,-49
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-7:
+    type: point
+    point: -123,20,-49
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-8:
+    type: point
+    point: -123,20,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-9:
+    type: point
+    point: -123,20,-57
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-10:
+    type: point
+    point: -123,20,-93
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-11:
+    type: point
+    point: -123,20,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-12:
+    type: point
+    point: -123,20,-101
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-13:
+    type: point
+    point: 132,20,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-14:
+    type: point
+    point: 132,21,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-15:
+    type: point
+    point: 132,20,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-16:
+    type: point
+    point: 132,21,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-17:
+    type: point
+    point: -116,20,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-18:
+    type: point
+    point: -116,21,-97
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-19:
+    type: point
+    point: -116,20,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  special-chest-20:
+    type: point
+    point: -116,21,-53
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not break this chest.'
+  boundary:
+    type: cuboid
+    min: -124,0,-102
+    max: 140,30,-48
+    invert: true
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-1:
+    type: cuboid
+    min: 83,0,-69
+    max: 30,30,-59
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-2:
+    type: cuboid
+    min: 29,0,-59
+    max: 29,30,-68
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-3:
+    type: cuboid
+    min: 28,0,-60
+    max: 27,30,-68
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-4:
+    type: cuboid
+    min: 26,0,-60
+    max: 26,30,-67
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-5:
+    type: cuboid
+    min: 25,0,-61
+    max: 24,30,-67
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-6:
+    type: cuboid
+    min: 23,0,-62
+    max: 23,30,-66
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-7:
+    type: cuboid
+    min: 23,0,-91
+    max: 30,30,-81
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-8:
+    type: cuboid
+    min: 29,0,-82
+    max: 29,30,-91
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-9:
+    type: cuboid
+    min: 28,0,-82
+    max: 27,30,-90
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-10:
+    type: cuboid
+    min: 26,0,-90
+    max: 26,30,-83
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-11:
+    type: cuboid
+    min: 25,0,-83
+    max: 24,30,-89
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-12:
+    type: cuboid
+    min: 23,0,-84
+    max: 23,30,-88
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-13:
+    type: cuboid
+    min: 95,0,-59
+    max: 115,30,-71
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-14:
+    type: cuboid
+    min: 116,0,-69
+    max: 140,30,-59
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-15:
+    type: cuboid
+    min: 95,0,-91
+    max: 115,30,-79
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-16:
+    type: cuboid
+    min: 116,-0,-81
+    max: 140,30,-91
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-17:
+    type: cuboid
+    min: 140,30,-91
+    max: 130,0,-59
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-18:
+    type: cuboid
+    min: -67,0,-81
+    max: -14,30,-91
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-20:
+    type: cuboid
+    min: -13,0,-91
+    max: -13,30,-82
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-21:
+    type: cuboid
+    min: -12,0,-82
+    max: -11,30,-90
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-22:
+    type: cuboid
+    min: -10,0,-83
+    max: -10,30,-90
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-23:
+    type: cuboid
+    min: -9,0,-89
+    max: -8,30,-83
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-24:
+    type: cuboid
+    min: -7,0,-88
+    max: -7,30,-84
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-25:
+    type: cuboid
+    min: -67,0,-59
+    max: -13,30,-68
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-26:
+    type: cuboid
+    min: -12,0,-68
+    max: -11,30,-60
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-27:
+    type: cuboid
+    min: -10,0,-60
+    max: -10,30,-67
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-28:
+    type: cuboid
+    min: -9,0,-67
+    max: -8,30,-61
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-29:
+    type: cuboid
+    min: -7,0,-66
+    max: -7,30,-62
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-30:
+    type: cuboid
+    min: -79,0,-59
+    max: -99,30,-71
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-31:
+    type: cuboid
+    min: -100,0,-69
+    max: -124,30,-59
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-32:
+    type: cuboid
+    min: -79,0,-91
+    max: -99,30,-79
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-33:
+    type: cuboid
+    min: -100,0,-81
+    max: -124,30,-91
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-34:
+    type: cuboid
+    min: -124,30,-91
+    max: -114,0,-59
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-35:
+    type: cuboid
+    min: 30,0,-91
+    max: 83,30,-81
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  boundary-36:
+    type: cuboid
+    min: -14,0,-69
+    max: -67,30,-69
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  pink-1:
+    type: cuboid
+    min: 108,0,-92
+    max: 131,7,-102
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  pink-2:
+    type: cuboid
+    min: 132,0,-102
+    max: 140,13,-92
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  purple-1:
+    type: cuboid
+    min: 108,0,-58
+    max: 131,7,-48
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  purple-2:
+    type: cuboid
+    min: 132,0,-48
+    max: 140,13,-58
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  yellow-1:
+    type: cuboid
+    min: -115,7,-48
+    max: -92,0,-58
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  yellow-2:
+    type: cuboid
+    min: -116,0,-58
+    max: -124,13,-48
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  orange-1:
+    type: cuboid
+    min: -92,0,-102
+    max: -115,7,-92
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  orange-2:
+    type: cuboid
+    min: -116,0,-92
+    max: -124,13,-102
+    flags:
+      build:
+        who: '*'
+        message: '&cYou may not build in the void.'
+  everywhere:
+    type: global
+    flags:
+      kill_player:
+        who: '*'
+        allow: true
+        triggers:
+          give_loadout:
+            loadout:
+              0:
+                item: golden apple
+                amount: 1
+ 
+loadout:
+  effects:
+  - damage resistance:5,5
+  helmet:
+    item: leather helmet
+    enchants:
+    - durability:1
+  chestplate:
+    item: leather chestplate
+    enchants:
+    - durability:1
+  leggings:
+    item: leather leggings
+    enchants:
+    - durability:1
+  boots:
+    item: leather boots
+    enchants:
+    - durability:1
+  0:
+    item: stone sword
+  1:
+    item: bow
+  2:
+    item: iron pickaxe
+    enchants:
+    - durability:2
+    - dig speed:1
+  3:
+    item: stone axe
+  4:
+    item: golden apple
+    amount: 2
+  5:
+    item: log:1
+    amount: 64
+  6:
+    item: glass
+    amount: 64
+  7:
+    item: bucket
+  8:
+    item: steak
+    amount: 32
+  27:
+    item: arrow
+    amount: 32
+ 
+teams:
+  blue:
+    spawn: 124.5,36,-74.5,90,1
+    title: Blue Team
+    max: 24
+    wools:
+      orange:
+        name: Orange Wool
+        chest: -123,16,-97
+        monument: 128,3,-76
+      yellow:
+        name: Yellow Wool
+        chest: -123,16,-53
+        monument: 128,3,-74
+  red:
+    spawn: -107.5,36,-74.5,-90,3
+    title: Red Team
+    max: 24
+    wools:
+      pink:
+        name: Pink Wool
+        chest: 139,16,-97
+        monument: -112,3,-76
+      purple:
+        name: Purple Wool
+        chest: 139,16,-53
+        monument: -112,3,-74
